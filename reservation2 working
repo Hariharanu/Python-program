@@ -336,7 +336,7 @@ def menu():
     tr=train()
     tick=tickets()
     print
-    print "WELCOME TO PRAHIT AGENCY".center(80)  
+    print "WELCOME TO Train RESERVATION AGENCY".center(80)  
     while True:
             print
             print "="*80
