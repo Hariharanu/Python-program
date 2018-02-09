@@ -2,10 +2,10 @@
 # Name:        module5
 # Purpose:
 #
-# Author:      Deepa
+# Author:      Aravinthan
 #
 # Created:     23/01/2018
-# Copyright:   (c) Deepa 2018
+# Copyright:   (c) Aravinthan 2018
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
