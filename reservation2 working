@@ -110,7 +110,7 @@ class tickets:
         trainno=int(raw_input("ENTER THE TRAIN NO:"))
         z=0
         f=0
-        fin2=open("tr1details.dat")
+        fin2=open("tr1details.txt")
         fin2.seek(0)
         if not fin2:
             print "ERROR"
@@ -133,7 +133,7 @@ class tickets:
                     if(f==1):
                         fout1=open("tickets.dat","ab")
                         print
-                        self.name=raw_input("ENTER THE PASSENGER'S NAME ")
+                        self.name=raw_input("ENTER THE PASSENGER'S NAME: ")
                         print
                         self.age=int(raw_input("PASSENGER'S AGE : "))
                         print
@@ -336,7 +336,7 @@ def menu():
     tr=train()
     tick=tickets()
     print
-    print "WELCOME TO TRAIN RESERVATION AGENCY".center(80)  
+    print "WELCOME TO RAILWAY RESERVATION AGENCY".center(80)  
     while True:
             print
             print "="*80
@@ -344,7 +344,7 @@ def menu():
             print
             print "="*80
             print
-            print "\t\t\t1. **UPDATE TRAIN DETAILS."
+            print "\t\t\t1. UPDATE TRAIN DETAILS."
             print
             print "\t\t\t2. TRAIN DETAILS. "
             print
@@ -355,7 +355,6 @@ def menu():
             print "\t\t\t5. DISPLAY PNR STATUS."
             print
             print "\t\t\t6. QUIT."
-            print"** - office use......"
             ch=int(raw_input("\t\t\tENTER YOUR CHOICE : "))
             os.system('cls')
             print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\tLOADING. .",
@@ -366,13 +365,13 @@ def menu():
             time.sleep(2)
             os.system('cls')
             if ch==1:
-                j="*****"
+                j="12345"
                 r=raw_input("\n\n\n\n\n\n\n\n\n\n\n\t\t\t\tENTER THE PASSWORD: ")
                 os.system('cls')
                 if (j==r):
                     x='y'
                     while (x.lower()=='y'):
-                        fout=open("tr1details.dat","ab")
+                        fout=open("tr1details.txt","ab")
                         tr.getinput()
                         dump(tr,fout)
                         fout.close()
@@ -391,7 +390,7 @@ def menu():
                     print"\n\n\n\n\n"
                     print "WRONG PASSWORD".center(80)
             elif ch==2:             
-                fin=open("tr1details.dat",'rb')
+                fin=open("tr1details.txt",'rb')
                 if not fin:
                     print "ERROR"
                 else:
