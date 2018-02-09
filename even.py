@@ -2,10 +2,10 @@
 # Name:        module1
 # Purpose:
 #
-# Author:      Deepa
+# Author:      aravinthan
 #
 # Created:     30/01/2018
-# Copyright:   (c) Deepa 2018
+# Copyright:   (c) aravinthan 2018
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
