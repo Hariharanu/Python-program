@@ -5,7 +5,7 @@ if n<1000000:
     u=input().split(" ")[:n]
     u.sort(reverse=False)
     if m==u:
-    	print("Yes")
+    	print("yes")
     else:
-    	print("False")
+    	print("false")
  
