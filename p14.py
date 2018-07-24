@@ -1,4 +1,5 @@
-n=input()
+m=int(input())
+n=input()[:m]
 v=['a','e','i','o','u']
 char=[]
 for i in n:
