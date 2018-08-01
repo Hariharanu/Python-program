@@ -4,6 +4,6 @@ while(n!=0):
 	r=n%2
 	m.append(r)
 	n=n//2
-m=sorted(m,reverse=True)
+m=list(reversed(m))
 m=list(map(str,m))
 print("".join(m))
