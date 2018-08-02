@@ -13,6 +13,10 @@ int main()
         sum=sum*a[i];
         
     }
-    printf("%d",sum);
+    if(sum>0){
+    printf("%d",sum);}
+    if(sum<0){
+    printf("%d ",-sum);
+}
     return 0;
 }
